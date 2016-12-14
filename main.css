@@ -1,0 +1,83 @@
+body {
+    font-size: 30px;
+    
+    background-color:lightgreen;
+}
+@media (max-width: 767px) {
+    body {
+        transition: 1s;
+        background-color:yellow;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        transition: 1s;
+        background-color:lightblue;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    body {
+        transition: 1s;
+        background-color:lightcoral;
+        font-size: 60px;
+    }
+}
+@media (min-width: 980px) {
+   body {
+       transition: 1s;
+        background-color:orange;
+       font-size: 5px;
+    }
+}
+@media (min-width: 1200px) {
+
+    body {
+        transition: 1s;
+        background-color:pink;
+    }
+}
+
+.outer-box{
+  width:200px;
+  height: 200px;
+  border: 2px solid navy;
+  position:relative;
+}
+.box{
+  width:100px;
+  height: 100px;
+  background: red;
+  position:absolute;
+  animation:2s running-box infinite;
+  
+  
+}
+@keyframes running-box{
+  0%{
+    left:0px;
+    top:0px;
+    background:yellow
+    
+  }
+  25%{
+    left:100px;
+  top:0px; 
+      background:pink;
+  }
+  50%{
+    left:100px;
+    top:100px;
+    background:lightblue
+  }
+  75%{
+    left:0px;
+    top:100px;
+    background:lightgreen;
+  }
+  100%{
+    left:0px;
+    top:0px;
+    background:yellow
+    
+    
+  }
