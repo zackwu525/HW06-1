@@ -1,0 +1,7 @@
+.BOX{
+    width: 100px;
+    height: 100px;
+    background: gold;
+    position:absolute;
+  animation:3s run infinite cubic-bezier(0,.7,.24,.98);
+}
